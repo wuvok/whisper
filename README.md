@@ -1,2 +1,2 @@
-# koolaid
-open sourcing a full stack password manager project 
+# Whisper 
+open sourcing a full stack IAM manager 
