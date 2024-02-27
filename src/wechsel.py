@@ -10,7 +10,6 @@ class Components():
          self.duration = None 
          self.password = ()
          self.identity = ()
-         
     def email_address(self,email) -> str:
         # todo-- create db table foreign reference 
         # todo-- map emails for table atomicity 
@@ -21,9 +20,11 @@ class Components():
         else:
             return 
           
-    def generate_sequence(self, generic = list): 
+    def gen_sequence(self, generic = list ): 
         self.generic = generic 
-        self.password = ( i for i in generic )
+        if(generic is list):
+            self.password = (i for i in generic)
+
     def clipper(self):
          
         from pyperclip import clip
