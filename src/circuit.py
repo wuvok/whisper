@@ -11,7 +11,7 @@ def upperCase():
      newComponents().generic.insert(randint(3,5), choice(ascii_uppercase))
 def lowCase(): 
      newComponents().generic.insert(randint(3,7), choice(ascii_lowercase))
-def punctuation(): 
+def selectPunctuation(): 
      newComponents().generic.insert(randint(5,7),choice(punctuation))
 def numero():
      newComponents().generic.insert(randint(1,5), choice(digits))
@@ -24,7 +24,7 @@ def iterator(a = int,b =int) -> int:
 def charm(permuatation): 
         for i in range(permuatation): 
                 lowCase()
-                punctuation()
+                selectPunctuation()
                 upperCase()
                 numero()
         pass 
